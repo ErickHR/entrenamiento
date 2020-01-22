@@ -5,7 +5,7 @@
 /* nav */
 nav{
     background-color: #22198E;
-    height: 95%;
+    height: 120%;
     width: 50%;
     border-radius: 25px;
     margin: 10px;
@@ -56,7 +56,7 @@ nav{
     margin-right: 20px;
 }
 
-.btn{
+.boton{
     background-color: rgb(228, 89, 175);
 }
 .btn-left{
@@ -67,11 +67,6 @@ nav{
 
 .btn-rigth{
     border-radius: 0px 20px 20px 0px;
-}
-
-.btn:hover{
-    background-color: orange;
-    height: 40;
 }
 
 .section-date-body-row{
@@ -161,9 +156,156 @@ img{
 
 .article-OthersStatitics{
     margin-top: 5%;
-    background-color: rgb(226, 226, 225);
-    height: 81%;
+    background-color: rgb(243, 243, 237);
     width: 103.2%;
     border-radius: 35px 0px 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;    
+}
+.article-OthersStatitics-OtherFunctios{
+    padding: 40px;
+}
+.article-OthersStatitics-OtherFunctios-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+}
+.article-OthersStatitics-OtherFunctios-body-square{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    border-radius: 15px;
+}
+.article-OthersStatitics-OtherFunctios-body-square-head{
+    background-color: rgb(236, 108, 219);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.article-OthersStatitics-OtherFunctios-body-square-head-icon{
+    justify-self: left;
+    margin-left: 10px;
+}
+.article-OthersStatitics-OtherFunctios-body-square-head-btn{
+    justify-self: right;
+}
+.btnOthersStatitics:hover{
+    border-radius: 0px 15px 15px 0px;
+    background-color: rgb(233, 135, 148);
+}
+.article-OthersStatitics-OtherFunctios-body-square-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.custom-switch{
+    align-items: right;
+}
+.section-Updating-body-info-separator{
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(245, 240, 240);
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.section-Updating-body-square-grafich{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    border-left: solid 1px gray;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+.section-Updating-body-square-grafich-1{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: rgb(212, 186, 186);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+#section-Updating-body-square-grafich-1{
+    animation: pintar 5s linear infinite;
+}
+.section-Updating-body-square-grafich-2{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: rgb(180, 129, 129);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.article-OthersStatitics-StatictsofCleaning-barras{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    padding: 50px;
+}
+.article-OthersStatitics-StatictsofCleaning-barras-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr;
+    gap: 2em;
+    justify-items: center;
+    align-items: end;
+}
+
+.article-OthersStatitics-StatictsofCleaning-barras{
+    background-color: honeydew;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:  30px 1fr;
+}
+.article-OthersStatitics-StatictsofCleaning-barras-body-uno{
+    width: 3px;
+    height: 180px;
+    background-color: rgb(216, 180, 180);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: end;
+}
+.article-OthersStatitics-StatictsofCleaning-barras-body-dos{
+    width: 100%;
+    height: 0;
+    background-color: rgb(194, 26, 26);
+}
+
+@keyframes pintar {
+    0% {
+        height: 0;
+    }
+
+    50% {
+        height: 50%;
+    }
+}
+
+.article-OthersStatitics-StatictsofCleaning-barras-body-dos {
+    animation: pintar 5s linear infinite;
 }
 /* end article */
