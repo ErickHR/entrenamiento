@@ -73,25 +73,49 @@ nav{
     background-color: orange;
     height: 40;
 }
-.section-date-body{
-    
-}
+
 .section-date-body-row{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 15px;   
+    margin-top: 15px;
     border-top: solid 1px gray;
     border-bottom: solid 1px gray;
 }
-
-.section-weeklyReports-body-datos{
-    display: flex;
-    justify-content: center;
-    border: solid 2px gray;
-    border-radius: 10px;
+.section-weeklyReports{
+    margin-top: 25px;
 }
-
+.section-weeklyReports-nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 50px;
+}
+.section-weeklyReports-nav-date{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: right;
+}
+.section-weeklyReports-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 1em;
+}
+.section-weeklyReports-body-datos{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    justify-items: center;
+    height: 140px;
+    grid-row-gap: 0.5em;
+    border: solid 1px gray;
+    border-radius: 30px;
+}
 .section-img{
+    justify-self: center;
+    align-self: center;
     border: solid 1px red;
     border-radius: 8px;
     height: 30px;
@@ -105,8 +129,41 @@ nav{
     position: relative;
     top: 5px;
 }
-
-.section-weeklyReports-body-datos-text{
+/*.section-weeklyReports-body-datos-text{
     font-size: 10px;
-}
+} */
 /* end section */
+
+/* article */
+
+.article{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 67%;
+}
+.article-session{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: right;  
+}
+.article-session-pestan{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    align-items: center;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.article-OthersStatitics{
+    margin-top: 5%;
+    background-color: rgb(226, 226, 225);
+    height: 81%;
+    width: 103.2%;
+    border-radius: 35px 0px 0px 0px;
+}
+/* end article */
